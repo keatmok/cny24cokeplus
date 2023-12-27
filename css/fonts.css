@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@font-face {
+	font-family:'cjngai';
+	 src:url('../fonts/cjngai.ttf') format('truetype');
+	font-style: normal;
+	font-weight:500;
+}
+/*
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+@font-face {
+	font-family:'Roboto';
+	 src:url('../fonts/Roboto-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight:300;
+}
+@font-face {
+	font-family:'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.svg') format('svg');
+	font-weight:600;
+}
+@font-face {
+	font-family:'Roboto';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.svg') format('svg');
+	font-weight:800;
+}
+@font-face {
+    font-family: 'RobotoCondensed';
+    src:url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+	font-weight:300; 
+}
+@font-face {
+    font-family: 'RobotoCondensed';
+    src:url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-style: normal;
+	font-weight:600; 
+}
+@font-face {
+    font-family: 'RobotoCondensed';
+    src:url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-style: normal;
+	font-weight:800; 
+}
+*/

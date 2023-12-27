@@ -1,0 +1,161 @@
+<!--
+<?php 
+if(!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] != "on"){
+	header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], true, 301);
+    exit;
+}
+?>
+-->
+<!-- check if login, NO >> go to coke+ login -->
+
+<!-- check if roomID exist, NO >> go to home -->
+
+<!-- check uid on member list, NO >> back to profile -->
+<!-- check uid on member list, YES >> check if member in this room -->
+
+<!-- check if member in this room, NO  >> go to home --> 
+<!-- check if member in this room, YES  >> get og pic --> 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+
+<link rel="stylesheet" type="text/css" href="../css/main.css?v=2" >
+<link rel="stylesheet" type="text/css" href="../css/fonts.css" >
+<link rel="shortcut icon" href="../img/favicon.ico">
+	
+<!-- Apple Touch Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/apple/144x144.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/apple/114x114.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/apple/72x72.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../img/apple/57x57.jpg">
+
+<meta name="keywords" content="">
+<meta name="description" content="今個龍年想一家人連更近❤️？快啲撳入嚟COKE+「夾」下口味，仲有機會得到屬於你屋企嘅「知咩料」最夾盆菜同埋可口可樂®賀年獎賞！">
+<meta name="author" content="可口可樂®">
+
+<meta property="og:title" content="【可口可樂®「知咩料」最夾盆菜】夾出更多驚喜優惠！" /> 
+<meta property="og:site_name" content="【可口可樂®「知咩料」最夾盆菜】" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="今個龍年想一家人連更近❤️？快啲撳入嚟COKE+「夾」下口味，仲有機會得到屬於你屋企嘅「知咩料」最夾盆菜同埋可口可樂®賀年獎賞！" />
+
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="../js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="../js/hammer.min.js"></script>
+<script type="text/javascript" src="../js/device.js"></script>
+<script type="text/javascript" src="../js/main.js?v=11"></script>
+<title>【可口可樂®「知咩料」最夾盆菜】</title>
+</head>
+
+<body onResize="resizeH()" onload="checkLoaderH()">	
+<div class="all-container">
+<div class="header-container">
+	<a href="https://www.coca-cola.com.hk" target="_blank"><div class="logo-container"></div></a>
+	<div class="menu-icon-container">
+		<div></div><div></div><div></div>
+	</div>
+</div>	
+	
+<div class="page-container rewards">
+	<div class="backdrop-container"><div></div><div></div><div></div></div>
+	<div class="page-container-inner">
+		<div class="page-title-container txt-cjngai txt-gold txt-large">免費贏走可口可樂<sup>®</sup><br/>「知咩料」最夾盆菜！</div>
+		<!--<div class="how-title-container grand-prize"><div class="txt-cjngai txt-gold txt-huge">終極獎賞</div></div>-->
+		<div class="img-div txt-cjngai txt-gold">
+			<div class="txt-big">如果你揀嘅6款食材同193嘅<br/>6款精選食材完全相同，<br/>即有機會贏得<br/>可口可樂<sup>®</sup>「知咩料」最夾盆菜！<br/>數量有限，先到先得。</div>
+			<div style="margin-top:.5em">請留意可口可樂<sup>®</sup>社交媒體得獎公布</div>
+		</div>
+		<div class="home-prizes-container">
+			<div class="home-prize-container"></div> 
+			<div class="clear"></div>
+		</div>
+		
+		<div class="how-title-container promo"><div class="txt-cjngai txt-gold txt-huge">最夾賀年獎賞</div></div> 
+		<div class="rewards-container txt-cjngai">
+			<a href="#" target="_blank">	
+				<div class="reward-container">
+				<div><div></div></div>
+				<div><div class="txt-red">GULU 預訂<br/>盆菜宴8折優惠</div><div>GULU 預訂<br/>盆菜宴8折優惠</div></div>
+				<div class="txt-gold">（100名）</div>
+			</div>
+			</a>	
+			<a href="#" target="_blank">
+				<div class="reward-container">
+					<div><div></div></div>
+					<div><div class="txt-red">PNS網購滋味組合</div><div>PNS網購滋味組合</div></div>
+					<div class="txt-gold"></div>
+				</div>
+			</a>	
+			<a href="#" target="_blank">
+			<div class="reward-container">
+				<div><div></div></div>
+				<div><div class="txt-red">Pandamart特選優惠</div><div>Pandamart特選優惠</div></div>
+				<div class="txt-gold"></div>
+			</div>
+			</a>	
+			<a href="#" target="_blank">	
+			<div class="reward-container">
+				<div><div></div></div>
+				<div><div class="txt-red">HKTVmall網購優惠</div><div>HKTVmall網購優惠</div></div>
+				<div class="txt-gold"></div>
+			</div>
+			</a>	
+			<a href="#" target="_blank">	
+			<div class="reward-container">
+				<div><div></div></div>
+				<div><div class="txt-red">太古eShop網店優惠</div><div>太古eShop網店優惠</div></div>
+				<div class="txt-gold"></div>
+			</div>
+			</a>	
+		</div>
+		
+		<div class="how-title-container sticker"><div class="txt-cjngai txt-gold txt-huge">下載造型角色<br/>製作Sticker</div></div> 
+		<div class="stickers-container">
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+			<div class="sticker-container"><img src="https://www.jazzup.com.hk/client/coca-cola/20231127/uploads/f26b3a6dc41d703c0b88cd6c4a6480c7B1234590fc2e9415790915.png" width="auto" height="115%" /></div>
+		</div>
+		
+		
+		<button class="general-button share"><div><div class="txt-cjngai txt-button txt-red">分享結果</div><div class="txt-cjngai txt-button">分享結果</div></div></button>
+		<a href="../create/" target="_self"><button class="general-button create last-one"><div><div class="txt-cjngai txt-button txt-red">製作新盆菜</div><div class="txt-cjngai txt-button">製作新盆菜</div></div></button></a>
+		<div style="text-align:center; margin-top:1em" class="txt-cjngai txt-gold txt-small">*有關推廣受條款及細則約束</div>
+	</div>
+</div>
+	
+<div class="cover-container"></div>
+		
+<div class="menu-container">
+	<div class="backdrop-container"><div></div><div></div><div></div></div>
+	<div class="page-container-inner">
+		<a href="../" target="_self"><button class="general-button home"><div><div class="txt-cjngai txt-button txt-red">主頁</div><div class="txt-cjngai txt-button">主頁</div></div></button></a>
+		<a href="../how/" target="_self"><button class="general-button how"><div><div class="txt-cjngai txt-button txt-red">遊戲玩法</div><div class="txt-cjngai txt-button">遊戲玩法</div></div></button></a>
+		<a href="../tnc" target="_self"><button class="general-button tnc"><div><div class="txt-cjngai txt-button txt-red">條款及細則</div><div class="txt-cjngai txt-button">條款及細則</div></div></button></a>
+		<a href="?logout=true" target="_self"><button class="general-button logout"><div><div class="txt-cjngai txt-button txt-red">登出</div><div class="txt-cjngai txt-button">登出</div></div></button></a>
+	</div>
+</div>	
+</div>
+	
+<div class="overlay-container loader">
+	<div class="overlay-container-inner">
+		<div class="overlay-box-container">
+			<div class="overlay-header-container">
+				<img src="../img/icon-alert.svg" width="22%" height="auto" alt="" />
+				<div class="txt-cjngai txt-gold txt-huge">上載中，請稍候。</div>
+			</div>
+		</div>	
+	</div>	
+</div>
+	
+</body>
+</html>
+	
